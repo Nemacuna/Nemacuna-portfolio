@@ -1,66 +1,123 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Nemerie Lesley Ann L. Acuña — Personal Portfolio
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A personal single-page portfolio website built with Laravel and Blade. It showcases my
+profile, educational background, certificates, projects, and contact information. The
+site is a static, database-free Laravel application — all of the content is defined
+directly in the routes file and rendered through Blade templates.
 
-## About Laravel
+## Description
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This portfolio serves as an online introduction and showcase for me, **Nemerie Lesley
+Ann L. Acuña**, an Information Technology student. It presents who I am, where I have
+studied, the certifications I have earned, the projects I have worked on, and the
+different ways to reach me.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Because the site uses no database, it is lightweight and easy to run: the same content
+is rendered on every request, and everything lives in the project's view files and one
+routes file.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Portfolio Sections
 
-## Learning Laravel
+The site is a single scrollable page made up of the following sections:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Home / Hero** — A brief welcome, my name, role, tagline, and a profile picture, plus
+  buttons to jump to my projects or contact section.
+- **About / Who I Am** — A profile picture, a short bio, and my basic contact details
+  (email, phone, and location).
+- **Education** — A timeline of my educational background:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+  * **Bachelor of Science in Information Technology (BSIT)** — Data Center College of
+    the Philippines, Bangued, Abra (2023 – Present)
+  * **Secondary Education (Junior & Senior High School)** — Luba-Tubo Catholic School
+    Inc., Luba, Abra (2017-2023)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Certificates** — My earned credentials. Currently includes *Online Safety Through
+  Nettiquette* (DICT, July 23, 2026). Clicking a certificate opens it in a lightbox with
+  an **X** button to close it and return to the page.
+- **Projects** — Cards describing my projects, each listing the technologies used:
 
-## Laravel Sponsors
+  * **Grade Computation System** — tracks and computes student grades (VB.Net)
+    ([GitHub](https://github.com/shainahblaza26-maker/grade-computation-system))
+  * **Permanent Record System** — a digital record management system (VB.Net)
+  * **Portfolio Website** — this very site (Laravel, Blade, CSS)
+    ([GitHub](https://github.com/shainahblaza26-maker/portfolio))
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- **Contact** — Clickable cards for Email, Phone, and GitHub, plus social links
+  (Facebook, Instagram, Telegram) in the footer.
 
-### Premium Partners
+## Profile Information
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+The personal details shown across the site (name, role, bio, email, phone, location,
+and social links) are defined once in `routes/web.php` and shared across all sections.
 
-## Contributing
+- **Name:** Nemerie Lesley Ann L. Acuña
+- **Role:** Information Technology Student
+- **Location:** Sabnangan, Luba, Abra
+- **Email:** nemerielesleyann.acuna@gmail.com
+- **Phone:** +63 967 203 2350
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Technologies Used
 
-## Code of Conduct
+- **Laravel 9** — PHP web framework (PHP ^8.0.2)
+- **Blade** — Laravel's templating engine for the views
+- **HTML5 & CSS3** — custom, hand-written styles in `public/css/app.css`
+- **JavaScript (vanilla)** — interactivity in `public/js/app.js` (theme toggle,
+  certificate lightbox, mobile navigation)
+- **Font Awesome 6.5.2** — icons (loaded via CDN)
+- **Google Fonts (Poppins)** — typography (loaded via CDN)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Project Structure
 
-## Security Vulnerabilities
+The portfolio content and layout are organized as follows:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```
+routes/web.php                — Defines the "/" route and ALL portfolio content
+resources/views/home.blade.php       — Main page that includes every section
+resources/views/layouts/app.blade.php — Page shell: navbar, footer, theme toggle
+resources/views/sections/
+    home.blade.php            — Hero / welcome section
+    about.blade.php           — Biography and basic contact info
+    education.blade.php       — Education timeline
+    certificates.blade.php    — Certificates (with lightbox)
+    projects.blade.php        — Project cards
+    contact.blade.php         — Contact cards
+resources/views/partials/     — SVG icons (Facebook, GitHub, Instagram, Mail, Telegram)
+public/css/app.css            — All custom styles
+public/js/app.js              — All custom JavaScript
+public/images/                — Profile picture, certificate, and project images
+```
+
+There are **no controllers, models, migrations, or database** — this is intentionally a
+content-only portfolio. To add or edit any content (bio, education, certificates,
+projects, or contact details), edit the arrays in `routes/web.php`.
+
+## How to Run Locally
+
+### Prerequisites
+
+- **PHP** 8.0.2 or higher
+- **Composer**
+
+### Steps
+
+```bash
+# 1. Install PHP dependencies
+composer install
+
+# 2. Create and configure your environment file
+cp .env.example .env
+php artisan key:generate
+
+# 3. Start the local development server
+php artisan serve
+```
+
+The site will be available at `http://127.0.0.1:8000`.
+
+> No database configuration, migrations, or seeders are required — the portfolio is
+> fully static.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is a personal student project. The Laravel framework is open-sourced under
+the [MIT license](https://opensource.org/licenses/MIT).
